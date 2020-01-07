@@ -45,6 +45,7 @@ function App() {
   return (
     <div className="app">
       <h3>Create New Todo</h3>
+      
       <form onSubmit={e => {
         e.preventDefault();
         createTodo({ variables: { text: input.value } });
@@ -54,6 +55,7 @@ function App() {
         <input className="form-control" type="text" placeholder="Enter todo" ref={node => { input = node; }}></input>
         <button className="btn btn-primary px-5 my-2" type="submit">Submit</button>
       </form>
+
       <ul>
         {data.todos.map((todo) =>
           <li key={todo.id} className="w-100">
