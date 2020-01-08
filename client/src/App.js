@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="app">
-      <h3>Create New Todo</h3>
+      <h3>New Todo using react</h3>
       
       <form onSubmit={e => {
         e.preventDefault();
