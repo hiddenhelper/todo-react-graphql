@@ -26,3 +26,9 @@ li span.done {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1400px) {
+  form, ul {
+    width: 80%;
+  }
+}
